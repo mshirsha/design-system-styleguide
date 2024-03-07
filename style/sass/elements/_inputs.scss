@@ -1,0 +1,428 @@
+// inputs
+// .input-field-block{
+//     display: flex;
+//     flex-direction: column;
+//     gap: 4px;
+
+// }
+.input-field-container {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+   gap: 1rem;
+}   
+
+label {
+    display: block;
+    font-weight: 500;
+
+}
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: .2rem;
+}
+
+.input-icon {
+    position: relative;
+
+    svg {
+        position: absolute;
+        top: 12px;
+        bottom: 0;
+        left: 8px;
+    }
+
+    input[type="text"]{
+        padding-left: 28px;
+    }
+}
+
+// inputs states
+input[type="text"]:hover {
+    background-color: $bg-gray-lt6;
+}
+
+input[type="text"]:active {
+    border: 1px solid $border-primary;
+}
+
+input[type="text"]:focus {
+    outline: 2px solid $border-primary;
+    outline-offset: 2px;
+    outline-style: dotted;
+
+}
+
+
+.input-error-message {
+    display: none;
+    font-size: $text-rg-1;
+}
+
+.error {
+    border: 1px solid $border-danger;
+}
+
+.error+.input-error-message {
+    display: block;
+    color: rgb(248, 43, 43)
+}
+
+input[type="text"]:disabled {
+
+    background-color: $bg-gray-lt5;
+    color: #999999;
+    border: 1px solid #cccccc;
+    cursor: not-allowed;
+
+}
+
+.picklist-textarea-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid $border-gray-lt2;
+    border-radius: 4px
+}
+
+select:hover {
+    background-color: $bg-gray-lt6;
+}
+
+select:active {
+    border: 1px solid $border-primary;
+}
+
+select:focus {
+    outline: 2px solid $border-primary;
+    outline-offset: 2px;
+    outline-style: dotted;
+
+}
+
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid $border-gray-lt2;
+    border-radius: 4px;
+    // resize: vertical;
+
+}
+
+textarea:hover {
+    background-color: $bg-gray-lt6;
+}
+
+textarea:active {
+    border: 1px solid $border-primary;
+}
+
+textarea:focus {
+    outline: 2px solid $border-primary;
+    outline-offset: 2px;
+    outline-style: dotted;
+
+}
+
+// input[type="checkbox"]{
+//     width: unset;
+// }
+
+// input[type="radio"]{
+//     width: unset;
+// }
+// .checkbox-radio-btn-field{
+//    display: grid;
+//    grid-template-columns: 1fr 1fr;
+//    gap: 1rem;
+// }
+// .input-checkbox{
+//     display: flex;
+//     gap: .5rem;
+// }
+// // input[type="checkbox"]:hover{
+// //     border: 1px solid $border-primary;
+// // }
+   
+
+
+// .input-radio{
+//     display: flex;
+//     gap: .5rem;  
+// }
+
+// .checkbox-container{
+//     position: relative;
+//     width: 10rem ;
+//     height: 50px;
+//     // opacity: ;
+//     background-color: aquamarine;
+// }
+// input[type="checkbox"]{
+//     position: absolute;
+//     height: 2rem;
+//     width: 2rem;
+// }
+// .checkmark{
+//     display: block;
+//     width: 2rem;
+//     height:2rem;
+//     position: absolute;
+//     border: 2px solid #fff;
+//     border-radius: 6px ;
+//     cursor: pointer;
+//     background-color: red;
+// }
+// .checkbox-container .checkmark::after{
+//     content: '';
+//     position: absolute;
+//     left: 24px ;
+//     bottom: 10px;
+//     opacity: 0;
+//     border: 1px solid gray;
+//     transform: rotate(45deg);
+//     transition: 0.5s, 0.5s, 0.5s;
+// }
+// .checkbox-container:checked ~ .checkmark::after{
+//     width: 20px;
+//     height: 40px;
+//     opacity: 1;
+// }
+
+
+
+
+// .checkbox-container{
+//     display: flex;
+//     align-items: center;
+// }
+
+// .checkbox-container label{
+//     cursor: pointer;
+//     display: flex;
+// }
+
+// .checkbox-container input[type='checkbox']{
+//     cursor: pointer;
+//     opacity: 0;
+//     position: absolute;
+// }
+// .checkbox-container label::before{
+//     content: '';
+//     width: 1rem;
+//     height: 1rem;
+//     border: 1px solid gray ;
+//     border-radius: .2rem;
+//     margin-right: .5rem;
+
+// }
+// .checkbox-container label:hover::before,
+// .checkbox-container input[type='checkbox']:hover + label::before{
+//     background-color:blue;
+// }
+
+// .checkbox-container input[type='checkbox']:checked +  label::before{
+//     background-color:blue;
+// }
+
+
+// checkbox  button
+
+// .checkbox-container{
+//     display: flex;
+//     align-items: center;
+//     gap:.5rem;
+// }
+
+
+.custome-checkbx{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.inner-wrap{
+    display: flex;
+    align-items: center;
+    gap:.5rem;
+}
+
+.custome-checkbx input[type="checkbox"]{
+    width:0px ; 
+    height:0px ;
+    padding:0px;
+    margin:0px;
+    position: absolute; 
+    opacity: 0;
+
+
+}
+
+.custome-checkbx input[type="checkbox"]:focus + .inner-wrap{
+    outline:1px solid $border-primary;
+    outline-offset: 4px;
+    outline-style: dotted;
+    border-radius: 4px;
+}
+
+
+.cust-checkbx-container{
+    border: 1px solid gray;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 24px;
+    min-height:24px;
+    border-radius:4px;
+
+    &:hover{
+        background-color: rgb(231, 231, 231) ;
+    }
+}
+
+.cust-checkbx-container svg {
+    display: none;
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+
+
+input[type="checkbox"]:checked + .inner-wrap .cust-checkbx-container  {
+    background-color:$bg-success;
+    border: 1px solid $border-success;
+}
+
+
+input[type="checkbox"]:checked + .inner-wrap .cust-checkbx-container svg  {
+    display: inline;
+}
+
+
+// radio disabled 
+
+input[type="checkbox"]:disabled + .inner-wrap .cust-checkbx-container {
+    border: 1px solid $border-gray-lt2;
+  
+   
+}
+input[type="checkbox"]:disabled + .inner-wrap .cust-checkbx-container  + .checkbx-label{
+   color: $text-gray-lt2;
+}
+
+
+// radio button
+
+.custome-radio{
+ position: relative;
+ display: flex;
+ align-items: center;
+ gap: .5rem;
+}
+
+.cust-inner-wrap{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.custome-radio input[type="radio"]{
+    width: 0 ;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+}
+// .custome-radio input[type="radio"]:focus + .cust-inner-wrap{
+//     outline: 1px solid $bg-primary;
+//    outline-offset: 4px;
+//    outline-style: dotted;
+//    border-radius: 1rem;
+// }
+
+.cust-radio-container{
+  display: inline-flex;
+  border: 1px solid gray;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  min-width: 24px;
+  min-height: 24px;
+
+  &:hover{
+    background-color: $bg-gray-lt5;
+  }
+
+}
+
+.cust-radio-container svg{
+    display: none;
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+
+input[type="radio"]:checked + .cust-inner-wrap .cust-radio-container{
+    background-color: $bg-primary;
+    border: 1px solid $border-primary;
+}
+
+input[type="radio"]:checked + .cust-inner-wrap  .cust-radio-container  svg{
+    display: inline;
+}
+
+
+// radio disabled 
+
+input[type="radio"]:disabled + .cust-inner-wrap .cust-radio-container {
+    border: 1px solid $border-gray-lt2;
+  
+   
+}
+input[type="radio"]:disabled + .cust-inner-wrap .cust-radio-container + .label-name{
+   color: $text-gray-lt2;
+}
+
+// /* Hide default radio button */
+// .custom-radio input[type="radio"] {
+//     display: none;
+// }
+
+// /* Style the custom radio button */
+// .custom-radio label {
+//     position: relative;
+//     padding-left: 30px; /* Adjust as needed based on the desired size */
+//     cursor: pointer;
+//     display: inline-block;
+//     line-height: 20px; /* Adjust as needed based on the desired size */
+// }
+
+// /* Create the custom radio button appearance */
+// .custom-radio label:before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 20px; /* Adjust as needed based on the desired size */
+//     height: 20px; /* Adjust as needed based on the desired size */
+//     border: 2px solid #333; /* Border color for the unchecked state */
+//     background-color: #fff; /* Background color for the unchecked state */
+//     border-radius: 50%; /* Make it a circle */
+// }
+
+// /* Style the custom radio button when checked */
+// .custom-radio input[type="radio"]:checked + label:before {
+//     background-color: #4CAF50; /* Background color for the checked state */
+//     border-color: #4CAF50; /* Border color for the checked state */
+// }

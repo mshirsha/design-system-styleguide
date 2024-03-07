@@ -1,0 +1,66 @@
+
+.alert-btn {
+    border: none;
+    background: none;
+}
+
+
+//  alert panel //
+
+
+.panel {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    width: max-content;
+    border-radius: .5rem;
+}
+
+.primary-alert{
+    background-color:$bg-primary-lt4;
+    border: 1px solid $bg-primary-dk1;
+
+}
+
+.secondary-alert{
+    background-color:$bg-secondary-lt4;
+    border: 1px solid $bg-secondary-dk1;
+}
+
+.gray-alert{
+    background-color:$bg-gray-lt4;
+    border: 1px solid $bg-gray-dk1;
+}
+.success-alert{
+    background-color: $bg-success-lt4;
+    border: 1px solid $bg-success-dk1;
+
+}
+
+
+.danger-alert{
+    background-color: $bg-danger-lt4;
+    border: 1px solid $bg-danger-dk1;
+
+}
+
+
+
+.warning-alert{
+    background-color:$bg-warning-lt4;
+    border: 1px solid $bg-warning-dk2;
+
+}
+
+
+.icon-container {
+    border-radius: 0.45rem;
+    padding: .15rem 0.25rem ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // svg{
+    //     fill: white;
+    // }
+}

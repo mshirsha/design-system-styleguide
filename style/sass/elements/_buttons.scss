@@ -1,0 +1,556 @@
+.btn {
+    padding: 8px 12px;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+}
+.btn-rg{
+    padding: 8px 12px;  
+}
+
+// primary buttons
+.btn-primary {
+    background-color: $bg-primary;
+    border: 2px solid $border-primary;
+   
+}
+.btn-primary-outline{
+    background-color: $bg-white;
+    border: 2px solid $border-primary-dk1;
+    color: $primary-dk-1;
+   
+
+}
+.btn-primary-bare{
+    color: $text-primary-dk2;
+    background-color: $bg-gray-lt6;
+    border:none ;
+   
+}
+
+
+
+// secondary buttons
+.btn-secondary{
+    background-color: $bg-secondary;
+    border: 2px solid $border-secondary;
+    
+}
+.btn-secondary-outline{
+    background-color: $bg-white;
+    border: 2px solid $border-secondary-dk1;
+    color: $secondary-dk-1;
+    
+
+}
+.btn-secondary-bare{
+    color: $text-secondary-dk2;
+    background-color: $bg-gray-lt6;
+    border:none ;
+  
+}
+
+// gray buttons
+.btn-gray{
+    background-color: $bg-gray;
+    border: 2px solid $border-gray;
+   
+}
+.btn-gray-outline{
+    background-color: $bg-white;
+    border: 2px solid $border-gray-dk1;
+    color: $gray-dk-1;
+   
+
+}
+.btn-gray-bare{
+    color: $text-gray-dk2;
+    background-color: $bg-gray-lt6;
+    border:none ;
+   
+}
+
+// success buttons
+.btn-success{
+    background-color: $bg-success;
+    border: 2px solid $border-success;
+   
+    
+}
+.btn-success-outline{
+    background-color: $bg-white;
+    border: 2px solid $border-success-dk1;
+    color: $success-dk-1;
+    
+
+}
+.btn-success-bare{
+    color: $text-success-dk2;
+    background-color: $bg-gray-lt6;
+    border:none ;
+    
+}
+
+
+// warning buttons
+.btn-warning{
+    background-color: $bg-warning;
+    border: 2px solid $border-warning;
+   color: $text-black;
+    
+}
+.btn-warning-outline{
+    background-color: $bg-white;
+    border: 2px solid $border-warning-dk3;
+    color: $text-warning-dk3;
+    
+
+}
+.btn-warning-bare{
+    color: $text-warning-dk2;
+    background-color: $bg-gray-lt6;
+    border:none ;
+    
+}
+
+// danger buttons
+.btn-danger{
+    background-color: $bg-danger;
+    border: 2px solid $border-danger;
+   
+    
+}
+.btn-danger-outline{
+    background-color: $bg-white;
+    border: 2px solid $border-danger-dk1;
+    color: $danger-dk-1;
+    
+
+}
+.btn-danger-bare{
+    color: $text-danger-dk2;
+    background-color: $bg-gray-lt6;
+    border:none ;
+    
+}
+// Black button
+.btn-black{
+    background-color: $bg-black;
+    border: 2px solid $border-black;
+   
+} 
+
+// White button
+.btn-white{
+    background-color: $bg-white;
+    border: 2px solid $border-gray-lt5;
+    color: $text-black;
+   
+} 
+.btn-white:hover{
+    background-color: $bg-gray-lt6;
+   
+   
+} 
+
+
+//  buttons container 
+.btns-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+    
+    
+}
+
+
+//////////////////// buttons states ///////////////////////
+
+//  primary btn states
+// hover
+.btn.btn-primary:hover {
+    background-color: $bg-primary-lt1;
+}
+
+// active
+.btn.btn-primary:active {
+    background-color: $bg-primary-dk2;
+}
+
+// focus
+.btn.btn-primary:focus {
+    outline: 2px solid $border-primary-dk2 ;
+    outline-offset: 2px;
+    outline-style: dotted;
+}
+
+// primary outline button states
+.btn.btn-primary-outline:hover {
+    background-color: $bg-primary-lt6;
+
+}
+
+.btn.btn-primary-outline:active {
+    background-color: $bg-primary-lt5 ;
+
+}
+.btn.btn-primary-outline:focus {
+    outline: 2px solid $border-primary-dk2 ;
+    outline-offset: 2px;
+    outline-style: dotted;
+}
+
+// bare  primary buttons states
+
+.btn-primary-bare:hover{
+   
+    background-color: $bg-primary-lt6;
+   
+}
+
+.btn-primary-bare:active{
+   
+    background-color: $bg-primary-lt5;
+   
+}
+
+.btn-primary-bare:focus{
+   
+    outline: 2px solid $border-black ;
+    outline-offset: 2px;
+    outline-style: dotted;
+   
+}
+
+
+//  secondary btn states
+// hover
+.btn.btn-secondary:hover {
+    background-color:#12c0db;
+}
+
+// active
+.btn.btn-secondary:active {
+    background-color: $bg-secondary-dk2;
+}
+
+// focus
+.btn.btn-secondary:focus {
+    outline: 2px solid $border-secondary-dk2 ;
+    outline-offset: 2px;
+    outline-style: dotted;
+}
+
+//secondary  outline button states
+.btn.btn-secondary-outline:hover {
+    background-color: $bg-secondary-lt6;
+
+}
+
+.btn.btn-secondary-outline:active {
+    background-color: $bg-secondary-lt5 ;
+
+}
+.btn.btn-secondary-outline:focus {
+    outline: 2px solid $border-secondary-dk2 ;
+    outline-offset: 2px;
+    outline-style: dotted;
+}
+
+
+// bare  secondary buttons states
+
+.btn-secondary-bare:hover{
+   
+    background-color: $bg-secondary-lt6;
+   
+   
+}
+
+.btn-secondary-bare:active{
+   
+    background-color: $bg-secondary-lt5;
+   
+}
+
+.btn-secondary-bare:focus{
+   
+    outline: 2px solid $border-black ;
+    outline-offset: 2px;
+    outline-style: dotted;
+   
+}
+
+//  gray btn states
+// hover
+.btn.btn-gray:hover {
+    background-color: #858585;
+}
+
+// active
+.btn.btn-gray:active {
+    background-color: $bg-gray-dk2;
+}
+
+// focus
+.btn.btn-gray:focus {
+    outline: 2px solid $border-gray-dk2 ;
+    outline-offset: 2px;
+    outline-style: dotted;
+}
+
+//gray  outline button states
+.btn.btn-gray-outline:hover {
+    background-color: $bg-gray-lt6;
+
+}
+
+.btn.btn-gray-outline:active {
+    background-color: $bg-gray-lt5 ;
+
+}
+.btn.btn-gray-outline:focus {
+    outline: 2px solid $border-gray-dk2 ;
+    outline-offset: 2px;
+    outline-style: dotted;
+}
+
+
+// bare  gray buttons states
+
+.btn-gray-bare:hover{
+   
+    background-color: $bg-gray-lt5;
+    
+   
+}
+
+.btn-gray-bare:active{
+   
+    background-color: $bg-gray-lt5;
+   
+}
+
+.btn-gray-bare:focus{
+   
+    outline: 2px solid $border-black ;
+    outline-offset: 2px;
+    outline-style: dotted;
+   
+}
+
+
+//  success btn states
+// hover
+.btn.btn-success:hover {
+    background-color:#15a805;
+}
+
+// active
+.btn.btn-success:active {
+    background-color: $bg-success-dk2;
+}
+
+// focus
+.btn.btn-success:focus {
+    outline: 2px solid $border-success-dk2 ;
+    outline-offset: 2px;
+    outline-style: dotted;
+}
+
+
+//success  outline button states
+.btn.btn-success-outline:hover {
+    background-color: $bg-success-lt6;
+
+}
+
+.btn.btn-success-outline:active {
+    background-color: $bg-success-lt5 ;
+
+}
+.btn.btn-success-outline:focus {
+    outline: 2px solid $border-success-dk2 ;
+    outline-offset: 2px;
+    outline-style: dotted;
+}
+
+
+// bare  success buttons states
+
+.btn-success-bare:hover{
+   
+    background-color: $bg-success-lt6;
+    
+   
+}
+
+.btn-success-bare:active{
+   
+    background-color: $bg-success-lt5;
+   
+}
+
+.btn-success-bare:focus{
+   
+    outline: 2px solid $border-black ;
+    outline-offset: 2px;
+    outline-style: dotted;
+   
+}
+
+//  warning btn states
+// hover
+.btn.btn-warning:hover {
+    background-color: #f5c30f;
+}
+
+// active
+.btn.btn-warning:active {
+    background-color: $bg-warning-dk2;
+}
+
+// focus
+.btn.btn-warning:focus {
+    outline: 2px solid $border-warning-dk2 ;
+    outline-offset: 2px;
+    outline-style: dotted;
+}
+
+//warning  outline button states
+.btn.btn-warning-outline:hover {
+    background-color: $bg-warning-lt6;
+    
+    
+
+}
+
+.btn.btn-warning-outline:active {
+    background-color: $bg-warning-lt5 ;
+
+}
+.btn.btn-warning-outline:focus {
+    outline: 2px solid $border-warning-dk2 ;
+    outline-offset: 2px;
+    outline-style: dotted;
+}
+
+
+// bare  warning buttons states
+
+.btn-warning-bare:hover{
+   
+    background-color: $bg-warning-lt6;
+   
+   
+}
+
+.btn-warning-bare:active{
+   
+    background-color: $bg-warning-lt5;
+   
+}
+
+.btn-warning-bare:focus{
+   
+    outline: 2px solid $border-black ;
+    outline-offset: 2px;
+    outline-style: dotted;
+   
+}
+
+
+//  danger btn states
+// hover
+.btn.btn-danger:hover {
+    background-color: #f13838;
+}
+
+// active
+.btn.btn-danger:active {
+    background-color: $bg-danger-dk2;
+}
+
+// focus
+.btn.btn-danger:focus {
+    outline: 2px solid $border-danger-dk2 ;
+    outline-offset: 2px;
+    outline-style: dotted;
+}
+
+
+//danger  outline button states
+.btn.btn-danger-outline:hover {
+    background-color: $bg-danger-lt6;
+
+}
+
+.btn.btn-danger-outline:active {
+    background-color: $bg-danger-lt5 ;
+
+}
+.btn.btn-danger-outline:focus {
+    outline: 2px solid $border-danger-dk2 ;
+    outline-offset: 2px;
+    outline-style: dotted;
+}
+
+// bare  danger buttons states
+
+.btn-danger-bare:hover{
+   
+    background-color: $bg-danger-lt6;
+    
+   
+}
+
+.btn-danger-bare:active{
+   
+    background-color: $bg-danger-lt5;
+   
+}
+
+.btn-danger-bare:focus{
+   
+    outline: 2px solid $border-black ;
+    outline-offset: 2px;
+    outline-style: dotted;
+   
+}
+
+
+// disabled button ///
+
+.btn[disabled] {
+    background-color: $gray-lt-2 ;
+    border: 2px solid  $gray-lt-2;
+    cursor: not-allowed;
+}
+
+
+
+// large button
+.btn-lg{
+    padding: 12px 16px;
+   
+}
+
+// small button
+.btn-sm {
+    padding: 4px 8px;
+   
+}
+.btn-icon-text{
+    display: flex;
+    align-items: center;
+    gap: .5rem ;
+}
+.btn-icon{
+    display: flex;
+    align-items: center;
+    gap: .5rem ;
+    padding: 10px 12px ;
+}
