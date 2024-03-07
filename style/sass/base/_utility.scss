@@ -1,5 +1,10 @@
-
-
+.text-upper{
+    text-transform: uppercase;
+}
+.text-lower{
+    text-transform: lowercase;
+}
+  
 // Text font sizes
 .text-sm-1{font-size: $spc-sm-2;}  //10px
 .text-sm-2{font-size: $spc-sm-3;}  //12px

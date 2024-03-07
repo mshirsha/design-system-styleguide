@@ -16,6 +16,14 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-lower {
+  text-transform: lowercase;
+}
+
 .text-sm-1 {
   font-size: 0.625rem;
 }
